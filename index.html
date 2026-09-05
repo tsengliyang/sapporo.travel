@@ -22,9 +22,6 @@
     --paper-card:#f7f2e6;
   }
   *{box-sizing:border-box;}
-  html, body {
-    overflow-x: hidden; /* 防止手機出現橫向滾動軸導致偏右 */
-  }
   html{scroll-behavior:smooth;}
   body{
     margin:0;
@@ -103,7 +100,6 @@
     border-radius:4px;
     padding:18px 22px;
     width:280px;
-    max-width:100%; /* 手機自動適應寬度 */
     text-align:left;
     position:relative;
     box-shadow:0 1px 0 rgba(42,37,31,0.05);
@@ -304,27 +300,6 @@
     display:flex;align-items:center;justify-content:center;
     font-family:'Shippori Mincho',serif; font-weight:700; font-size:16px;
     mix-blend-mode:multiply; transform:rotate(3deg);
-  }
-
-  /* ---------- MOBILE RESPONSIVE ---------- */
-  @media (max-width: 640px) {
-    section { padding: 40px 16px; }
-    .day {
-      grid-template-columns: 1fr;
-      gap: 16px;
-      padding: 36px 0;
-    }
-    .stamp-col {
-      flex-direction: row;
-      align-items: center;
-      gap: 12px;
-    }
-    .stamp-thread {
-      width: 100%;
-      height: 1px;
-      margin-top: 0;
-    }
-    header.hero { padding: 48px 16px 32px; }
   }
 </style>
 </head>
@@ -513,573 +488,19 @@
       </ul>
       <div class="meal-recs">
         <div class="meal-group lunch">
-          <span class="meal-label">午餐（圓山公園站周邊）2選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/34h1hH478mC4R9B1A" target="_blank" rel="noopener">円山教授 Soup Curry</a></span><span class="mdesc">圓山人氣海鮮系湯咖哩，招牌濃郁海鮮高湯，離神宮不遠</span></div>
-            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/P8Z8y2E7XJ3N84x36" target="_blank" rel="noopener">奧芝商店 おくしばちゃん（圓山）</a></span><span class="mdesc">蝦高湯湯咖哩代表，喜歡海鮮／蝦頭風味選這家</span></div>
-          </div>
-        </div>
-        <div class="meal-group dinner">
-          <span class="meal-label">晚餐（下山後）2選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/d2U6Y4vC5X7m36M37" target="_blank" rel="noopener">Daruma 成吉思汗 烤羊肉</a></span><span class="mdesc">薄野老字號，微寒的天氣吃炭火烤羊肉非常過癮</span></div>
-            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/X4B7uU5T1h61F2KRA" target="_blank" rel="noopener">GARAKU 湯咖喱</a></span><span class="mdesc">札幌湯咖哩天花板之一，高湯層次豐富，晚上排隊人潮多建議早點去</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="tip-box"><span class="label">小提醒</span>藻岩山頂風大，夜間體感溫度顯著偏低，即使是秋天也請務必穿足保暖衣物；若遇到天氣不好或大霧，可靈活把夜景改至其他天備案。</div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- DAY 5 -->
-<section id="day5">
-  <div class="day">
-    <div class="stamp-col">
-      <div class="hanko">五</div>
-      <div class="stamp-thread"></div>
-    </div>
-    <div class="day-body">
-      <div class="date-row"><span class="d">10/21（三）</span></div>
-      <h3>札幌市區漫遊、公園散策與採買</h3>
-      <span class="theme-tag">City Walk &amp; Shopping</span>
-      <ul class="timeline">
-        <li><span class="time">09:30-10:00</span><span class="desc"><span class="place">二條市場 朝市</span><span class="note">走路或搭地下鐵到「バスセンター前」，朝市有新鮮海鮮丼、現剖烤干貝，是體驗札幌晨間市集的好地方</span></span></li>
-        <li><span class="time">上午</span><span class="desc"><span class="place">大通公園 ＋ 札幌電視塔</span><span class="導致網頁在手機上會**整體偏右（出現橫向滾動條）**的主因是：某些固定寬度的元件（例如 `.day` 的 Grid 版面 layout、`.ticket` 的卡片寬度）在螢幕較窄的手機上**超出了螢幕邊界**，進而把整個頁面撐寬。
-
-我已經為你修復了這個 CSS 問題，並同時幫你補齊了最後一段程式碼中缺漏的結尾標籤（確保網頁結構完整）。內容與文字完全沒有改變。
-
-### 完整修復後的 HTML 程式碼：
-
-```html
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>札幌．六日五夜 | 2026.10.17 - 10.22</title>
-<link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-<link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-<link href="[https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
-<style>
-  :root{
-    --washi:#efe7d8;
-    --washi-deep:#e6dcc7;
-    --ink:#2a251f;
-    --ink-soft:#5c5347;
-    --indigo:#33465c;
-    --indigo-deep:#22303f;
-    --persimmon:#b94b2e;
-    --moss:#5f6e4a;
-    --gold:#a6803d;
-    --line:rgba(42,37,31,0.16);
-    --paper-card:#f7f2e6;
-  }
-  *{box-sizing:border-box;}
-  html, body{
-    overflow-x:hidden; /* 防止手機上橫向溢出造成偏右 */
-    scroll-behavior:smooth;
-  }
-  body{
-    margin:0;
-    background-color:var(--washi);
-    background-image:
-      radial-gradient(circle at 20% 10%, rgba(166,128,61,0.06), transparent 40%),
-      radial-gradient(circle at 85% 30%, rgba(51,70,92,0.05), transparent 45%),
-      repeating-linear-gradient(0deg, rgba(42,37,31,0.015) 0px, rgba(42,37,31,0.015) 1px, transparent 1px, transparent 3px);
-    color:var(--ink);
-    font-family:'Noto Sans TC', sans-serif;
-    -webkit-font-smoothing:antialiased;
-    line-height:1.7;
-  }
-  h1,h2,h3,.mincho{font-family:'Shippori Mincho', serif;}
-  a{color:inherit;}
-  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
-
-  /* ---------- NAV ---------- */
-  nav.daynav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(239,231,216,0.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  .daynav-inner{
-    max-width:920px;margin:0 auto;padding:0 24px;
-    display:flex; gap:2px; overflow-x:auto; scrollbar-width:none;
-  }
-  .daynav-inner::-webkit-scrollbar{display:none;}
-  .daynav a{
-    flex:0 0 auto;
-    font-size:12.5px; letter-spacing:0.05em;
-    padding:12px 10px;
-    text-decoration:none;
-    color:var(--ink-soft);
-    white-space:nowrap;
-    border-bottom:2px solid transparent;
-    transition:color .2s, border-color .2s;
-  }
-  .daynav a:hover, .daynav a.active{
-    color:var(--persimmon);
-    border-bottom-color:var(--persimmon);
-  }
-
-  /* ---------- HERO ---------- */
-  header.hero{
-    padding:72px 24px 48px;
-    text-align:center;
-    position:relative;
-  }
-  .eyebrow{
-    font-size:12.5px; letter-spacing:.32em; color:var(--indigo);
-    text-transform:uppercase; margin-bottom:18px; font-weight:600;
-  }
-  header.hero h1{
-    font-size:clamp(38px,7vw,64px);
-    font-weight:700;
-    margin:0 0 12px;
-    color:var(--ink);
-    letter-spacing:.03em;
-  }
-  header.hero .sub{
-    font-size:16px; color:var(--ink-soft); margin-bottom:6px;
-  }
-  header.hero .dates{
-    font-size:14px; color:var(--indigo); letter-spacing:.05em; font-weight:600;
-  }
-
-  .tickets{
-    display:flex; gap:16px; justify-content:center; flex-wrap:wrap;
-    margin-top:40px;
-  }
-  .ticket{
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:4px;
-    padding:18px 22px;
-    width:100%;
-    max-width:280px; /* 改為最大寬度，避免小螢幕手機被撐開 */
-    text-align:left;
-    position:relative;
-    box-shadow:0 1px 0 rgba(42,37,31,0.05);
-  }
-  .ticket::before{
-    content:'';
-    position:absolute; left:-7px; top:50%; transform:translateY(-50%);
-    width:14px; height:14px; border-radius:50%;
-    background:var(--washi);
-    border:1px solid var(--line);
-  }
-  .ticket::after{
-    content:'';
-    position:absolute; right:-7px; top:50%; transform:translateY(-50%);
-    width:14px; height:14px; border-radius:50%;
-    background:var(--washi);
-    border:1px solid var(--line);
-  }
-  .ticket .flightno{
-    font-family:'Shippori Mincho',serif;
-    font-size:20px; font-weight:700; color:var(--indigo);
-  }
-  .ticket .route{font-size:13px; color:var(--ink-soft); margin:4px 0 12px;}
-  .ticket .rows{
-    display:flex; justify-content:space-between;
-    border-top:1px dashed var(--line); padding-top:10px;
-  }
-  .ticket .rows div{font-size:12px;}
-  .ticket .rows .t{font-size:17px; font-family:'Shippori Mincho',serif; font-weight:600;}
-  .ticket .rows .loc{color:var(--ink-soft);}
-
-  /* ---------- SECTION GENERIC ---------- */
-  section{padding:64px 24px;}
-  .section-head{max-width:920px; margin:0 auto 36px;}
-  .section-head .eyebrow{text-align:left; margin-bottom:10px;}
-  .section-head h2{font-size:28px; margin:0;}
-
-  hr.divider{
-    border:none; height:1px; background:var(--line);
-    max-width:920px; margin:0 auto;
-  }
-
-  /* ---------- DAY BLOCK ---------- */
-  .day{
-    max-width:920px; margin:0 auto; padding:56px 0;
-    display:grid; grid-template-columns:88px 1fr; gap:28px;
-  }
-  /* 手機版自動改為單欄排列，避免印章圖案與內文重疊推擠 */
-  @media (max-width: 640px) {
-    .day {
-      grid-template-columns: 1fr;
-      gap: 16px;
-      padding: 36px 0;
-    }
-    .stamp-col {
-      flex-direction: row;
-      align-items: center;
-      gap: 12px;
-    }
-    .stamp-thread {
-      width: 100%;
-      height: 1px;
-      margin-top: 0;
-    }
-  }
-
-  .stamp-col{display:flex; flex-direction:column; align-items:center;}
-  .hanko{
-    width:64px; height:64px; border-radius:46% 54% 52% 48%/50% 46% 54% 50%;
-    background:var(--persimmon);
-    color:var(--washi);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Shippori Mincho',serif; font-size:26px; font-weight:700;
-    mix-blend-mode:multiply;
-    transform:rotate(-4deg);
-    box-shadow:0 0 0 1px rgba(185,75,46,0.25);
-    flex:0 0 auto;
-  }
-  .stamp-thread{
-    width:1px; flex:1; background:var(--line); margin-top:14px;
-  }
-  .day-body .date-row{
-    display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
-    margin-bottom:4px;
-  }
-  .day-body .date-row .d{font-size:13px; color:var(--indigo); font-weight:600; letter-spacing:.04em;}
-  .day-body h3{
-    font-size:26px; margin:0 0 6px; color:var(--ink);
-  }
-  .day-body .theme-tag{
-    display:inline-block; font-size:11.5px; letter-spacing:.06em;
-    color:var(--moss); border:1px solid var(--moss); border-radius:20px;
-    padding:3px 12px; margin-bottom:22px;
-  }
-
-  .timeline{list-style:none; margin:0; padding:0;}
-  .timeline li{
-    position:relative;
-    padding:0 0 22px 26px;
-    border-left:1px solid var(--line);
-    margin-left:4px;
-  }
-  .timeline li:last-child{border-left:1px solid transparent; padding-bottom:0;}
-  .timeline li::before{
-    content:'';
-    position:absolute; left:-4.5px; top:6px;
-    width:8px; height:8px; border-radius:50%;
-    background:var(--indigo);
-  }
-  .timeline .time{
-    font-family:'Shippori Mincho',serif;
-    font-size:14.5px; font-weight:600; color:var(--indigo);
-    display:block; margin-bottom:3px;
-  }
-  .timeline .desc{font-size:15px; color:var(--ink);}
-  .timeline .desc .place{font-weight:600;}
-  .timeline .desc .note{display:block; font-size:13px; color:var(--ink-soft); margin-top:2px;}
-
-  .meal-recs{
-    margin-top:26px;
-    display:flex; flex-direction:column; gap:18px;
-  }
-  .meal-group .meal-label{
-    display:inline-flex; align-items:center; gap:6px;
-    font-size:12px; letter-spacing:.08em; font-weight:700;
-    color:var(--indigo); margin-bottom:10px;
-  }
-  .meal-group .meal-label::before{
-    content:''; width:6px; height:6px; border-radius:50%; background:var(--indigo);
-    display:inline-block;
-  }
-  .meal-group.dinner .meal-label{color:var(--persimmon);}
-  .meal-group.dinner .meal-label::before{background:var(--persimmon);}
-  .meal-options{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:10px;
-  }
-  @media (max-width:640px){ .meal-options{grid-template-columns:1fr;} }
-  .meal-card{
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:12px 14px;
-  }
-  .meal-card .mname{
-    display:block; font-weight:600; font-size:13.5px; margin-bottom:3px;
-  }
-  .meal-card .mdesc{
-    display:block; font-size:12px; color:var(--ink-soft); line-height:1.5;
-  }
-
-  .meal-card .mname a{
-    color:var(--indigo); text-decoration:none;
-    border-bottom:1px dotted var(--indigo);
-  }
-  .meal-card .mname a:hover{border-bottom-style:solid;}
-
-  .tip-box{
-    margin-top:24px;
-    background:var(--paper-card);
-    border:1px dashed var(--gold);
-    border-radius:6px;
-    padding:16px 18px;
-    font-size:13.5px;
-    color:var(--ink-soft);
-  }
-  .tip-box .label{
-    color:var(--persimmon); font-weight:700; font-size:12.5px;
-    letter-spacing:.06em; display:block; margin-bottom:6px;
-  }
-
-  /* ---------- EXPLORE (shopping / stroll) ---------- */
-  .explore-grid{
-    display:grid; grid-template-columns:1fr 1fr; gap:36px;
-    max-width:920px; margin:0 auto;
-  }
-  @media (max-width:720px){ .explore-grid{grid-template-columns:1fr;} }
-  .explore-col h3{
-    font-size:18px; display:flex; align-items:center; gap:10px; margin-bottom:22px;
-  }
-  .explore-col h3 .dot{width:9px; height:9px; border-radius:50%; display:inline-block;}
-  .explore-col.shop h3 .dot{background:var(--persimmon);}
-  .explore-col.walk h3 .dot{background:var(--moss);}
-  .spot{
-    padding:16px 0; border-top:1px solid var(--line);
-  }
-  .spot:last-child{border-bottom:1px solid var(--line);}
-  .spot .name{font-weight:600; font-size:15.5px; margin-bottom:4px;}
-  .spot .name .dist{
-    font-size:11.5px; font-weight:400; color:var(--ink-soft);
-    margin-left:8px;
-  }
-  .spot .desc{font-size:13.5px; color:var(--ink-soft);}
-
-  /* ---------- PRACTICAL ---------- */
-  .practical-grid{
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px; max-width:920px; margin:0 auto;
-  }
-  .practical-card{
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:20px;
-  }
-  .practical-card .k{
-    font-family:'Shippori Mincho',serif; font-size:15px; font-weight:700;
-    color:var(--indigo); margin-bottom:8px; display:block;
-  }
-  .practical-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
-
-  footer{
-    text-align:center; padding:56px 24px 80px; color:var(--ink-soft); font-size:12.5px;
-  }
-  footer .stamp-final{
-    width:46px;height:46px;border-radius:46% 54% 52% 48%/50% 46% 54% 50%;
-    background:var(--indigo); color:var(--washi); margin:0 auto 18px;
-    display:flex;align-items:center;justify-content:center;
-    font-family:'Shippori Mincho',serif; font-weight:700; font-size:16px;
-    mix-blend-mode:multiply; transform:rotate(3deg);
-  }
-</style>
-</head>
-<body>
-
-<nav class="daynav">
-  <div class="daynav-inner" id="daynavInner">
-    <a href="#day1">Day1 抵達</a>
-    <a href="#day2">Day2 小樽</a>
-    <a href="#day3">Day3 洞爺湖/登別</a>
-    <a href="#day4">Day4 白色戀人/藻岩山</a>
-    <a href="#day5">Day5 市區</a>
-    <a href="#day6">Day6 賦歸</a>
-    <a href="#explore">逛街 · 散策</a>
-    <a href="#practical">實用資訊</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="eyebrow">Sapporo Slow Trip</div>
-  <h1>札幌．六日五夜</h1>
-  <div class="sub">慢節奏北海道秋日旅行</div>
-  <div class="dates">2026.10.17（六）— 10.22（四）｜由縁溫泉旅館 五連泊</div>
-
-  <div class="tickets">
-    <div class="ticket">
-      <div class="flightno">TR 892</div>
-      <div class="route">Scoot B787-9 · 桃園 → 札幌新千歲</div>
-      <div class="rows">
-        <div><span class="t">13:00</span><br><span class="loc">TPE T1</span></div>
-        <div style="text-align:right"><span class="t">17:55</span><br><span class="loc">CTS 國際線</span></div>
-      </div>
-    </div>
-    <div class="ticket">
-      <div class="flightno">TR 893</div>
-      <div class="route">Scoot B787-8 · 札幌新千歲 → 桃園</div>
-      <div class="rows">
-        <div><span class="t">19:10</span><br><span class="loc">CTS 國際線</span></div>
-        <div style="text-align:right"><span class="t">22:35</span><br><span class="loc">TPE T1</span></div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<hr class="divider">
-
-<!-- DAY 1 -->
-<section id="day1">
-  <div class="day">
-    <div class="stamp-col">
-      <div class="hanko">一</div>
-      <div class="stamp-thread"></div>
-    </div>
-    <div class="day-body">
-      <div class="date-row"><span class="d">10/17（六）</span></div>
-      <h3>抵達札幌，溫泉暖身</h3>
-      <span class="theme-tag">Arrival</span>
-      <ul class="timeline">
-        <li><span class="time">13:00</span><span class="desc"><span class="place">桃園機場出發</span> — TR892，飛行約 3h55m</span></li>
-        <li><span class="time">17:55</span><span class="desc"><span class="place">抵達新千歲機場</span><span class="note">入境、領行李後，可於機場先買一組限定伴手禮墊墊胃</span></span></li>
-        <li><span class="time">約19:00</span><span class="desc"><span class="place">搭 JR 快速エアポート 前往札幌車站</span><span class="note">約37分鐘，也可選利木津巴士直達市區飯店</span></span></li>
-        <li><span class="time">約19:40</span><span class="desc"><span class="place">Check-in：由縁溫泉旅館</span><span class="note">地下鐵大通駅1號出口步行約8分，放下行李、卸下旅途疲憊</span></span></li>
-        <li><span class="time">晚上</span><span class="desc"><span class="place">薄野／狸小路周邊 chill 覓食</span><span class="note">飯店步行範圍內就有拉麵橫丁、成吉思汗鍋，不用跑遠</span></span></li>
-        <li><span class="time">睡前</span><span class="desc"><span class="place">大浴場泡湯</span><span class="note">登別カルルス溫泉源泉，營業至凌晨1:00，早點休息調時差</span></span></li>
-      </ul>
-      <div class="meal-recs">
-        <div class="meal-group dinner">
-          <span class="meal-label">晚餐 3選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/Ramai+Sapporo+Chu%C5%8D/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298fd417673b:0xfc8101ad6e146891!8m2!3d43.054725!4d141.3434414!16s%2Fg%2F1tfl9f_2](https://www.google.com/maps/place/Ramai+Sapporo+Chu%C5%8D/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298fd417673b:0xfc8101ad6e146891!8m2!3d43.054725!4d141.3434414!16s%2Fg%2F1tfl9f_2)" target="_blank" rel="noopener">Ramai Sapporo Chuo</a></span><span class="mdesc">峇里島風湯咖哩，特色裝潢，適合當旅程開場的小驚喜</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/%E4%B8%80%E8%98%AD%E6%8B%89%E9%BA%B5%E6%9C%AD%E5%B9%8C%E8%96%84%E9%87%8E%E5%BA%97/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2984fdd24fa7:0x1d720c3a94869ef5!4m6!3m5!1s0x5f0b29d4361fd70b:0x178bde0345422e85!8m2!3d43.0562287!4d141.3509214!16s%2Fg%2F11j3x4w0rt](https://www.google.com/maps/place/%E4%B8%80%E8%98%AD%E6%8B%89%E9%BA%B5%E6%9C%AD%E5%B9%8C%E8%96%84%E9%87%8E%E5%BA%97/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2984fdd24fa7:0x1d720c3a94869ef5!4m6!3m5!1s0x5f0b29d4361fd70b:0x178bde0345422e85!8m2!3d43.0562287!4d141.3509214!16s%2Fg%2F11j3x4w0rt)" target="_blank" rel="noopener">一蘭拉麵 薄野店</a></span><span class="mdesc">個人隔間不用社交，剛下飛機累壞了很適合</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/%E8%BE%A3%E4%B8%80%E7%95%AA+%E6%9C%AD%E5%B9%8C%E6%8B%89%E9%BA%B5+Susukino/@43.0547814,141.3150418,14z/data=!4m6!3m5!1s0x5f0b298432917c9d:0xf45210b3ecb38ee6!8m2!3d43.0547814!4d141.3531506!16s%2Fg%2F11c2lb0j80](https://www.google.com/maps/place/%E8%BE%A3%E4%B8%80%E7%95%AA+%E6%9C%AD%E5%B9%8C%E6%8B%89%E9%BA%B5+Susukino/@43.0547814,141.3150418,14z/data=!4m6!3m5!1s0x5f0b298432917c9d:0xf45210b3ecb38ee6!8m2!3d43.0547814!4d141.3531506!16s%2Fg%2F11c2lb0j80)" target="_blank" rel="noopener">辣一番 札幌拉麵 Susukino</a></span><span class="mdesc">吃辣愛好者可選這間，離飯店近</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="tip-box"><span class="label">小提醒</span>國際線入境通關加領行李，抓 1 小時較保險；若餓了機場 3 樓有拉麵道場可以先簡單吃。飯店步行圈內的 Pole Town 地下街有 <b>KINOTOYA BAKE POLE TOWN</b>，晚餐後散步回旅館時可以順手買現烤夾心餅乾當宵夜。</div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- DAY 2 -->
-<section id="day2">
-  <div class="day">
-    <div class="stamp-col">
-      <div class="hanko">二</div>
-      <div class="stamp-thread"></div>
-    </div>
-    <div class="day-body">
-      <div class="date-row"><span class="d">10/18（日）</span></div>
-      <h3>小樽慢遊：運河、玻璃與音樂盒</h3>
-      <span class="theme-tag">Otaru Day Trip</span>
-      <ul class="timeline">
-        <li><span class="time">上午</span><span class="desc"><span class="place">札幌車站搭 JR 出發</span><span class="note">函館本線，快速エアポート約32分／普通車約53分，抵達小樽車站</span></span></li>
-        <li><span class="time">10:00起</span><span class="desc"><span class="place">小樽運河沿岸散步</span><span class="note">石造倉庫群配運河水景，很好拍，也很好放空；運河旁的<b>龍宮神社</b>可以順路走過去看看，<b>かま栄工場直売店</b>則有現炸半月燒可以邊走邊吃</span></span></li>
-        <li><span class="time">午餐</span><span class="desc"><span class="place">小樽出拔小路 或 壽司屋通 或 世壱屋うに専門店</span><span class="note">出拔小路／壽司屋通吃新鮮海產丼、握壽司；如果想吃奢侈一點，堺町通上的<b>世壱屋</b>是知名海膽專門店，招牌「5大うに食べ比べ丼」一次比較5種海膽</span></span></li>
-        <li><span class="time">午後</span><span class="desc"><span class="place">堺町通商店街</span><span class="note">北一硝子玻璃館、音樂盒堂本館、洋菓子店 LeTAO／北菓樓 都在這條路上，慢慢逛</span></span></li>
-        <li><span class="time">午後</span><span class="desc"><span class="place">ちいかわもぐもぐ本舗 小樽店</span><span class="note">2026年7月新開幕，堺町通上的吉伊卡哇周邊專賣店，有小樽限定款商品</span></span></li>
-        <li><span class="time">傍晚</span><span class="desc"><span class="place">搭 JR 返回札幌</span><span class="note">回市區晚餐，或直接回旅館泡湯休息</span></span></li>
-      </ul>
-      <div class="meal-recs">
-        <div class="meal-group lunch">
-          <span class="meal-label">午餐（小樽）3選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/search/?api=1&query=%E3%81%86%E3%81%AB%E5%B0%82%E9%96%80%E5%BA%97%E4%B8%96%E5%A3%B1%E5%B1%8B%E3%80%80%E5%B0%8F%E6%A8%BD%E9%81%8B%E6%B2%B3%E5%BA%97](https://www.google.com/maps/search/?api=1&query=%E3%81%86%E3%81%AB%E5%B0%82%E9%96%80%E5%BA%97%E4%B8%96%E5%A3%B1%E5%B1%8B%E3%80%80%E5%B0%8F%E6%A8%BD%E9%81%8B%E6%B2%B3%E5%BA%97)" target="_blank" rel="noopener">世壱屋 うに専門店</a></span><span class="mdesc">堺町通上的海膽專門店，招牌「5大うに食べ比べ丼」一次吃5種海膽</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/search/?api=1&query=%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82%E3%80%80%E5%B0%8F%E6%A8%BD%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4](https://www.google.com/maps/search/?api=1&query=%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82%E3%80%80%E5%B0%8F%E6%A8%BD%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4)" target="_blank" rel="noopener">三角市場 瀧波食堂</a></span><span class="mdesc">豪華海鮮丼，可自選3-4種配料，新鮮直送</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://maps.app.goo.gl/SNft8ZraayoAWfJy5](https://maps.app.goo.gl/SNft8ZraayoAWfJy5)" target="_blank" rel="noopener">若鶏時代 なると本店</a></span><span class="mdesc">外酥內軟半雞唐揚げ，想吃輕食一點可選這間</span></div>
-          </div>
-        </div>
-        <div class="meal-group dinner">
-          <span class="meal-label">晚餐（回札幌）2選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/%E6%B9%AF%E5%92%96%E5%96%B1+%E5%A5%A5%E8%8A%9D%E5%95%86%E5%BA%97+%E5%AE%9F%E5%AE%B6/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b299b48aa41cf:0x6701ff4d44f4ed17!4m6!3m5!1s0x5f0b290acd8b439d:0x3f389af670e1d18a!8m2!3d43.0588175!4d141.3499365!16s%2Fg%2F11g9w52p6c](https://www.google.com/maps/place/%E6%B9%AF%E5%92%96%E5%96%B1+%E5%A5%A5%E8%8A%9D%E5%95%86%E5%BA%97+%E5%AE%9F%E5%AE%B6/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b299b48aa41cf:0x6701ff4d44f4ed17!4m6!3m5!1s0x5f0b290acd8b439d:0x3f389af670e1d18a!8m2!3d43.0588175!4d141.3499365!16s%2Fg%2F11g9w52p6c)" target="_blank" rel="noopener">湯咖喱 奧芝商店 実家</a></span><span class="mdesc">札幌人氣湯咖哩名店之一，配料選擇多</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/Yakiniku+Tokuju+K-Place/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2974cab5bf17:0xdb1d735415b93e43!4m6!3m5!1s0x5f0b2975ba415b45:0xbae00cc7caa4d8e4!8m2!3d43.0661521!4d141.3536456!16s%2Fg%2F1wbf_5_z](https://www.google.com/maps/place/Yakiniku+Tokuju+K-Place/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2974cab5bf17:0xdb1d735415b93e43!4m6!3m5!1s0x5f0b2975ba415b45:0xbae00cc7caa4d8e4!8m2!3d43.0661521!4d141.3536456!16s%2Fg%2F1wbf_5_z)" target="_blank" rel="noopener">Yakiniku Tokuju K-Place</a></span><span class="mdesc">在札幌車站附近，從小樽搭車回來下車就能吃，不用再移動</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="tip-box"><span class="label">小提醒</span>小樽風大且靠海，10月傍晚偏涼，建議帶件防風外套；車站有置物櫃可寄放太重的戰利品。</div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- DAY 3 -->
-<section id="day3">
-  <div class="day">
-    <div class="stamp-col">
-      <div class="hanko">三</div>
-      <div class="stamp-thread"></div>
-    </div>
-    <div class="day-body">
-      <div class="date-row"><span class="d">10/19（一）</span></div>
-      <h3>Klook 一日遊：京極名水公園・洞爺湖展望臺・登別地獄谷</h3>
-      <span class="theme-tag">Day Tour</span>
-      <ul class="timeline">
-        <li><span class="time">前一晚</span><span class="desc"><span class="place">確認集合地點與時間</span><span class="note">這團集合點可選「JR札幌站」或「大通公園」，出發前務必核對憑證上你們預約的是哪一個</span></span></li>
-        <li><span class="time">清晨</span><span class="desc"><span class="place">依集合時間搭乘遊覽車出發</span><span class="note">建議提早10分鐘抵達集合點，並簡單準備早餐在車上吃</span></span></li>
-        <li><span class="time">上午</span><span class="desc"><span class="place">京極名水公園</span><span class="note">羊蹄山伏流湧泉，日本名水百選之一，天氣好時可遠眺羊蹄山，泉水清澈可直接生飲</span></span></li>
-        <li><span class="time">上午</span><span class="desc"><span class="place">洞爺湖展望臺</span><span class="note">俯瞰洞爺湖、中島、有珠山、昭和新山全景</span></span></li>
-        <li><span class="time">中午前後</span><span class="desc"><span class="place">Lake Hill Farm</span><span class="note">洞爺湖畔牧場，環境開闊步調慢，可以吃霜淇淋、遠眺羊蹄山當作行程中的放鬆緩衝</span></span></li>
-        <li><span class="time">午後</span><span class="desc"><span class="place">昭和新山熊牧場</span><span class="note">不含門票，近距離看棕熊</span></span></li>
-        <li><span class="time">下午</span><span class="desc"><span class="place">登別地獄谷</span><span class="note">火山地貌與蒸騰白煙，這天最具代表性的景觀</span></span></li>
-        <li><span class="time">傍晚前</span><span class="desc"><span class="place">登別溫泉街 自由活動</span><span class="note">免費足湯、手湯，隨走隨逛買伴手禮或簡單用餐，行程不強制安排</span></span></li>
-        <li><span class="time">傍晚</span><span class="desc"><span class="place">返回札幌市區</span><span class="note">車程較長，回程可以在車上小睡回血；官方說當天行程不會太趕，不影響晚上安排</span></span></li>
-        <li><span class="time">晚上</span><span class="desc"><span class="place">選好消化的晚餐</span><span class="note">坐了一整天車，適合湯咖哩或熱呼呼的湯品類</span></span></li>
-      </ul>
-      <div class="meal-recs">
-        <div class="meal-group dinner">
-          <span class="meal-label">晚餐（回市區後）2選1</span>
-          <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/Suage%2B+Soup+Curry/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2985aacefdef:0x68c0e186f6a15b9c!4m6!3m5!1s0x5f0b298454c641bf:0x91c019c2cebc6973!8m2!3d43.0557369!4d141.3512699!16s%2Fg%2F1wn_5xkl](https://www.google.com/maps/place/Suage%2B+Soup+Curry/@43.0577908,141.3102589,14z/data=!3m1!5s0x5f0b2985aacefdef:0x68c0e186f6a15b9c!4m6!3m5!1s0x5f0b298454c641bf:0x91c019c2cebc6973!8m2!3d43.0557369!4d141.3512699!16s%2Fg%2F1wn_5xkl)" target="_blank" rel="noopener">Suage+ Soup Curry</a></span><span class="mdesc">人氣湯咖哩，蔬菜給得大方，坐了一整天車剛好暖胃不會太重</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://maps.app.goo.gl/5UArxX8jpJE1kUHWA](https://maps.app.goo.gl/5UArxX8jpJE1kUHWA)" target="_blank" rel="noopener">根室花まる（薄野店）</a></span><span class="mdesc">迴轉壽司，想換個清爽口味吃點新鮮海產可以選這間</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="tip-box"><span class="label">小提醒</span>這天全程跟團移動時間長，建議前一晚早點睡；戶外景點風大，外套跟保暖小物別忘了帶上車；行程若需要托運行李，需提前告知並準備每件JPY2000現金給司機。</div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- DAY 4 -->
-<section id="day4">
-  <div class="day">
-    <div class="stamp-col">
-      <div class="hanko">四</div>
-      <div class="stamp-thread"></div>
-    </div>
-    <div class="day-body">
-      <div class="date-row"><span class="d">10/20（二）</span></div>
-      <h3>白色戀人公園、圓山散策接夜景</h3>
-      <span class="theme-tag">Sweets &amp; Nature &amp; Night View</span>
-      <ul class="timeline">
-        <li><span class="time">09:00左右</span><span class="desc"><span class="place">出發前往白色戀人公園</span><span class="note">搭地下鐵東西線到「宮の沢」站（約25-30分鐘），出站步行約7分即達；這天需要早點出門，跟前一天不同，是比較有安排的一天</span></span></li>
-        <li><span class="time">10:00-12:00</span><span class="desc"><span class="place">白色戀人公園</span><span class="note">工廠參觀看白色戀人／白色年輪蛋糕製作過程、庭園散步；付費區「フォトショップ・メメント」可用手機選照片現場申請客製化冰箱磁鐵，等候約30分鐘，可以順便逛紀念品店、喝杯Chocolate Lounge的限定甜點</span></span></li>
-        <li><span class="time">12:00左右</span><span class="desc"><span class="place">搭東西線返回圓山公園方向</span><span class="note">同一條地下鐵線，車程約15分鐘，不用换線</span></span></li>
-        <li><span class="time">午餐</span><span class="desc"><span class="place">圓山公園站周邊</span><span class="note">円山教授湯咖哩 或 奧芝商店圓山分店，詳見下方餐廳選項</span></span></li>
-        <li><span class="time">午後</span><span class="desc"><span class="place">北海道神宮 ＋ 圓山公園</span><span class="note">地下鐵東西線「圓山公園」站，原始林間散步賞楓，很安靜的一區</span></span></li>
-        <li><span class="time">16:00前</span><span class="desc"><span class="place">前往藻岩山纜車山麓站</span><span class="note">搭市電至「ロープウェイ入口」站，步行約8分，或飯店叫車較快</span></span></li>
-        <li><span class="time">16:50-17:10左右</span><span class="desc"><span class="place">日落時分登頂</span><span class="note">10月下旬札幌日落約在此區間，抓這個時間上山可以接續看到日落轉夜景；當天確切時間建議出發前上藻岩山官網（mt-moiwa.jp）核對</span></span></li>
-        <li><span class="time">夜景</span><span class="desc"><span class="place">山頂展望台</span><span class="note">日本新三大夜景之一，找張長椅慢慢看就好</span></span></li>
-        <li><span class="time">晚餐</span><span class="desc"><span class="place">下山後薄野解決</span><span class="note">回到熟悉的飯店周邊，吃點喜歡的收尾</span></span></li>
-      </ul>
-      <div class="meal-recs">
-        <div class="meal-group lunch">
           <span class="meal-label">午餐（圓山周邊）3選1</span>
           <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://maps.app.goo.gl/oZiSvoDdfxRzx1gA6](https://maps.app.goo.gl/oZiSvoDdfxRzx1gA6)" target="_blank" rel="noopener">森彥咖啡本店</a></span><span class="mdesc">木造老宅咖啡館，輕食＋自家烘焙咖啡，神宮參拜後散步可達</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://maps.app.goo.gl/mBA9SsN2YvJqtutv5](https://maps.app.goo.gl/mBA9SsN2YvJqtutv5)" target="_blank" rel="noopener">円山教授</a></span><span class="mdesc">在地人氣海鮮湯咖哩，配料豐富份量足</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E3%83%91%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD](https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E3%83%91%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD)" target="_blank" rel="noopener">円山Pancake</a></span><span class="mdesc">舒芙蕾厚鬆餅，適合當作悠閒的brunch</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/oZiSvoDdfxRzx1gA6" target="_blank" rel="noopener">森彥咖啡本店</a></span><span class="mdesc">木造老宅咖啡館，輕食＋自家烘焙咖啡，神宮參拜後散步可達</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://maps.app.goo.gl/mBA9SsN2YvJqtutv5" target="_blank" rel="noopener">円山教授</a></span><span class="mdesc">在地人氣海鮮湯咖哩，配料豐富份量足</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E3%83%91%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD" target="_blank" rel="noopener">円山Pancake</a></span><span class="mdesc">舒芙蕾厚鬆餅，適合當作悠閒的brunch</span></div>
           </div>
         </div>
         <div class="meal-group dinner">
           <span class="meal-label">晚餐（下山後薄野）3選1</span>
           <div class="meal-options">
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/%E8%9D%A6%E5%91%B3%E6%8B%89%E9%BA%B5+%E4%B8%80%E5%B9%BB+%E7%B8%BD%E6%9C%AC%E5%BA%97/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298eb2868acf:0x1db6df1ac2901e3!8m2!3d43.05127!4d141.345472!16s%2Fg%2F1tmbvxtz](https://www.google.com/maps/place/%E8%9D%A6%E5%91%B3%E6%8B%89%E9%BA%B5+%E4%B8%80%E5%B9%BB+%E7%B8%BD%E6%9C%AC%E5%BA%97/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298eb2868acf:0x1db6df1ac2901e3!8m2!3d43.05127!4d141.345472!16s%2Fg%2F1tmbvxtz)" target="_blank" rel="noopener">一幻總本店（いちげん）</a></span><span class="mdesc">濃厚甜蝦湯頭拉麵，薄野排隊名店</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/Rojiura+Curry+SAMURAI(%E6%B9%AF%E7%8F%88%E5%93%A9%EF%BC%89/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298516fe3d0d:0x38510d05a5b187a4!8m2!3d43.0557952!4d141.3498962!16s%2Fg%2F1tdmpvnl](https://www.google.com/maps/place/Rojiura+Curry+SAMURAI(%E6%B9%AF%E7%8F%88%E5%93%A9%EF%BC%89/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298516fe3d0d:0x38510d05a5b187a4!8m2!3d43.0557952!4d141.3498962!16s%2Fg%2F1tdmpvnl)" target="_blank" rel="noopener">Rojiura Curry SAMURAI</a></span><span class="mdesc">人氣湯咖哩，辣度可調，看完夜景暖暖胃</span></div>
-            <div class="meal-card"><span class="mname"><a href="[https://www.google.com/maps/place/%E7%89%9B%E8%82%89%E6%B6%AE%E6%B6%AE%E9%8D%8B%E3%83%BB%E5%A3%BD%E5%96%9C%E7%87%92%E5%B0%88%E9%96%80%E5%BA%97+%E7%A6%AA/@43.0547814,141.3150418,14z/data=!3m1!5s0x5f0b29830149ea09:0xac8104c7febae510!4m6!3m5!1s0x5f0b298306c92a67:0xf81720abb46e258e!8m2!3d43.0581492!4d141.3564981!16s%2Fg%2F1tcyx6kl](https://www.google.com/maps/place/%E7%89%9B%E8%82%89%E6%B6%AE%E6%B6%AE%E9%8D%8B%E3%83%BB%E5%A3%BD%E5%96%9C%E7%87%92%E5%B0%88%E9%96%80%E5%BA%97+%E7%A6%AA/@43.0547814,141.3150418,14z/data=!3m1!5s0x5f0b29830149ea09:0xac8104c7febae510!4m6!3m5!1s0x5f0b298306c92a67:0xf81720abb46e258e!8m2!3d43.0581492!4d141.3564981!16s%2Fg%2F1tcyx6kl)" target="_blank" rel="noopener">牛肉涮涮鍋・壽喜燒 禪</a></span><span class="mdesc">想吃點不同的鍋物，暖呼呼收尾這天的行程</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/%E8%9D%A6%E5%91%B3%E6%8B%89%E9%BA%B5+%E4%B8%80%E5%B9%BB+%E7%B8%BD%E6%9C%AC%E5%BA%97/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298eb2868acf:0x1db6df1ac2901e3!8m2!3d43.05127!4d141.345472!16s%2Fg%2F1tmbvxtz" target="_blank" rel="noopener">一幻總本店（いちげん）</a></span><span class="mdesc">濃厚甜蝦湯頭拉麵，薄野排隊名店</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/Rojiura+Curry+SAMURAI(%E6%B9%AF%E7%8F%88%E5%93%A9%EF%BC%89/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298516fe3d0d:0x38510d05a5b187a4!8m2!3d43.0557952!4d141.3498962!16s%2Fg%2F1tdmpvnl" target="_blank" rel="noopener">Rojiura Curry SAMURAI</a></span><span class="mdesc">人氣湯咖哩，辣度可調，看完夜景暖暖胃</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/%E7%89%9B%E8%82%89%E6%B6%AE%E6%B6%AE%E9%8D%8B%E3%83%BB%E5%A3%BD%E5%96%9C%E7%87%92%E5%B0%88%E9%96%80%E5%BA%97+%E7%A6%AA/@43.0547814,141.3150418,14z/data=!3m1!5s0x5f0b29830149ea09:0xac8104c7febae510!4m6!3m5!1s0x5f0b298306c92a67:0xf81720abb46e258e!8m2!3d43.0581492!4d141.3564981!16s%2Fg%2F1tcyx6kl" target="_blank" rel="noopener">牛肉涮涮鍋・壽喜燒 禪</a></span><span class="mdesc">想吃點不同的鍋物，暖呼呼收尾這天的行程</span></div>
           </div>
         </div>
       </div>
@@ -1099,14 +520,188 @@
     </div>
     <div class="day-body">
       <div class="date-row"><span class="d">10/21（三）</span></div>
-      <h3>札幌市區漫遊與購物</h3>
-      <span class="theme-tag">City Walk &amp; Shopping</span>
+      <h3>市區慢遊日：公園、市場與最後採買</h3>
+      <span class="theme-tag">City Chill</span>
       <ul class="timeline">
-        <li><span class="time">全天</span><span class="desc"><span class="place">札幌市區景點與商圈採購</span><span class="note">大通公園、北海道廳舊本廳舍、狸小路商店街補貨採買</span></span></li>
+        <li><span class="time">上午</span><span class="desc"><span class="place">大通公園散步</span><span class="note">旅館步行可達，順道遠望電視塔、喝杯咖啡發呆</span></span></li>
+        <li><span class="time">近午</span><span class="desc"><span class="place">北海道廳舊本廳舍（赤煉瓦）</span><span class="note">2025年整修後重新開放，8:45-21:00，前庭免費可散步，紅磚建築很好拍</span></span></li>
+        <li><span class="time">午前收尾</span><span class="desc"><span class="place">北菓樓 札幌本館</span><span class="note">就在赤煉瓦步行2-3分鐘，安藤忠雄設計的挑高書庫空間，招牌泡芙、年輪蛋糕都在這，2樓咖啡座可坐下來吃甜點（週二公休，10/21是週三沒問題）</span></span></li>
+        <li><span class="time">午餐</span><span class="desc"><span class="place">二条市場</span><span class="note">逛新鮮海產、現吃海鮮丼或烤扇貝</span></span></li>
+        <li><span class="time">下午</span><span class="desc"><span class="place">狸小路商店街購物</span><span class="note">藥妝、雜貨、伴手禮一次補齊，累了隨時能鑽進旁邊咖啡廳</span></span></li>
+        <li><span class="time">傍晚</span><span class="desc"><span class="place">札幌時計台</span><span class="note">路過拍張紀念照即可，不用停留太久</span></span></li>
+        <li><span class="time">晚餐</span><span class="desc"><span class="place">薄野壓軸晚餐</span><span class="note">成吉思汗烤羊肉或燒肉，慶祝旅程接近尾聲</span></span></li>
       </ul>
+      <div class="meal-recs">
+        <div class="meal-group lunch">
+          <span class="meal-label">午餐（二条市場）3選1</span>
+          <div class="meal-options">
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E8%8C%B6%E5%B1%8B%E3%80%80%E4%BA%8C%E6%9D%A1%E5%B8%82%E5%A0%B4" target="_blank" rel="noopener">どんぶり茶屋</a></span><span class="mdesc">市場內海鮮丼名店，配料可自由組合</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%A1%E4%BA%AD%E3%80%80%E4%BA%8C%E6%9D%A1%E5%B8%82%E5%A0%B4" target="_blank" rel="noopener">北のグルメ亭</a></span><span class="mdesc">現烤扇貝、螃蟹，邊逛邊吃很方便</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/Sandria/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b298be5a16c23:0x74ad323094a3012c!8m2!3d43.0494283!4d141.3457879!16s%2Fg%2F1td32vjz" target="_blank" rel="noopener">Sandria 三明治工房</a></span><span class="mdesc">24小時老字號三明治，外帶去中島公園野餐很chill</span></div>
+          </div>
+        </div>
+        <div class="meal-group dinner">
+          <span class="meal-label">晚餐（壓軸）3選1</span>
+          <div class="meal-options">
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD%E3%83%93%E3%83%BC%E3%83%AB%E5%9C%92%E3%80%80%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">サッポロビール園</a></span><span class="mdesc">成吉思汗吃到飽＋精釀啤酒，適合最後一晚慶祝</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/%E9%B0%BB%E3%81%AE%E6%88%90%E7%80%AC+%E6%9C%AD%E5%B9%8C%E4%B8%AD%E5%A4%AE%E5%BA%97/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b2b006377051b:0x1e05f17aaf3170df!8m2!3d43.0494973!4d141.3550962!16s%2Fg%2F11y77wzxsc" target="_blank" rel="noopener">鰻の成瀬 札幌中央店</a></span><span class="mdesc">鰻魚飯專門店，就在中島公園駅旁，晚餐後散步去中島公園剛好順路</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%97%E3%82%AB%E3%83%AC%E3%83%BC+GARAKU+%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">GARAKU</a></span><span class="mdesc">札幌人氣湯咖哩名店之一，濃郁香料湯底</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tip-box"><span class="label">小提醒</span>這天彈性最大，若前幾天走比較累，也可以把上午留白，晚一點再出門。逛完狸小路想再散步的話，薄野的 <b>Susukino Crepreriz</b> 可麗餅是不錯的收尾甜點；<b>A Happy Pancake Sapporo Odori</b> 也在大通附近，適合當早午餐替代方案。想找間有味道的老店喝咖啡，離飯店不遠的 <b>純喫茶オリンピア</b>（1964年開業的復古喫茶店）很值得一試，不過只營業到平日18:00、週末公休，記得挑對日子。</div>
     </div>
   </div>
 </section>
+
+<hr class="divider">
+
+<!-- DAY 6 -->
+<section id="day6">
+  <div class="day">
+    <div class="stamp-col">
+      <div class="hanko">六</div>
+    </div>
+    <div class="day-body">
+      <div class="date-row"><span class="d">10/22（四）</span></div>
+      <h3>賦歸：最後的札幌時光</h3>
+      <span class="theme-tag">Departure</span>
+      <ul class="timeline">
+        <li><span class="time">上午</span><span class="desc"><span class="place">Check-out，行李寄放櫃台</span><span class="note">輕裝繼續逛最後一段</span></span></li>
+        <li><span class="time">上午</span><span class="desc"><span class="place">JR塔 Stellar Place／大丸百貨</span><span class="note">或回狸小路補買遺珠伴手禮</span></span></li>
+        <li><span class="time">上午</span><span class="desc"><span class="place">逛滑雪用品</span><span class="note">車站周邊順路：<b>札幌スポーツ館 サツエキBridge店</b>（車站旁）、<b>Columbia パセオ店</b>（Paseo商場內雪衣配件）；若想看更齊全的專業裝備，<b>秀岳荘 北大店</b>是在地老牌滑雪專門店，從車站走路約10分鐘或搭一站地鐵到「北12条駅」，值得專程去一趟</span></span></li>
+        <li><span class="time">午餐</span><span class="desc"><span class="place">札幌拉麵共和國 或 湯咖哩</span><span class="note">札幌車站樓上，離開前再吃一碗道地拉麵</span></span></li>
+        <li><span class="time">約15:30前</span><span class="desc"><span class="place">回旅館取行李，搭 JR 快速エアポート 前往新千歲機場</span><span class="note">車程約37分，抓寬鬆一點的時間比較安心</span></span></li>
+        <li><span class="time">機場</span><span class="desc"><span class="place">最後採買</span><span class="note">哆啦A夢空中樂園、拉麵道場、伴手禮店都在航廈內，登機前還能再逛一輪</span></span></li>
+        <li><span class="time">19:10</span><span class="desc"><span class="place">新千歲機場出發</span> — TR893</span></li>
+        <li><span class="time">22:35</span><span class="desc"><span class="place">抵達桃園機場</span><span class="note">結束六天五夜的札幌慢旅</span></span></li>
+      </ul>
+      <div class="meal-recs">
+        <div class="meal-group lunch">
+          <span class="meal-label">午餐（札幌車站）3選1</span>
+          <div class="meal-options">
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E5%85%B1%E5%92%8C%E5%9B%BD" target="_blank" rel="noopener">札幌拉麵共和國</a></span><span class="mdesc">JR塔內集結北海道各地名店，一次嚐鮮</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E6%A0%B9%E5%AE%A4%E8%8A%B1%E3%81%BE%E3%82%8B+JR%E3%82%BF%E3%83%AF%E3%83%BC%E5%BA%97" target="_blank" rel="noopener">根室花まる（JR塔店）</a></span><span class="mdesc">迴轉壽司，離開前再吃一輪新鮮漁獲</span></div>
+            <div class="meal-card"><span class="mname">大丸百貨地下街熟食</span><span class="mdesc">買份北海道特色便當，帶著上車／上機吃也方便</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tip-box"><span class="label">小提醒</span>國際線建議飛機起飛前2.5-3小時抵達機場辦理登機，19:10的班機抓16:00-16:30到機場最保險。若想去秀岳荘北大店，建議一早先去（開店約10:00），逛完再折返車站吃午餐，時間比較好抓。</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EXPLORE -->
+<section id="explore">
+  <div class="section-head">
+    <div class="eyebrow">Explore Sapporo</div>
+    <h2>市區逛街購物 ＆ 踏青散步口袋名單</h2>
+  </div>
+  <div class="explore-grid">
+    <div class="explore-col shop">
+      <h3><span class="dot"></span>購物血拼</h3>
+      <div class="spot">
+        <div class="name">狸小路商店街 <span class="dist">飯店步行約8分</span></div>
+        <div class="desc">札幌最長的拱廊商店街，藥妝、伴手禮、二手店、居酒屋都在這，下雨天也不怕。</div>
+      </div>
+      <div class="spot">
+        <div class="name">JR塔 Stellar Place／Paseo／APIA <span class="dist">札幌車站</span></div>
+        <div class="desc">車站直結的地下街與百貨，品牌齊全，也是雨天備案首選。</div>
+      </div>
+      <div class="spot">
+        <div class="name">二条市場 <span class="dist">大通站周邊</span></div>
+        <div class="desc">在地海鮮市場，逛之餘能現場坐下來吃海鮮丼、烤扇貝，很有生活感。</div>
+      </div>
+      <div class="spot">
+        <div class="name">Sapporo Factory <span class="dist">巴士／步行可達</span></div>
+        <div class="desc">舊啤酒工廠改建的複合商場，中庭挑高玻璃屋很好拍，逛累了可以喝杯精釀啤酒。</div>
+      </div>
+      <div class="spot">
+        <div class="name">大丸藤井セントラル／丸井今井 <span class="dist">大通站周邊</span></div>
+        <div class="desc">老牌百貨，地下美食街適合買熟食、甜點當旅館宵夜。</div>
+      </div>
+      <div class="spot">
+        <div class="name">滑雪用品：札幌スポーツ館／Columbia パセオ店 <span class="dist">札幌車站周邊</span></div>
+        <div class="desc">車站周邊順路款，札幌スポーツ館サツエキBridge店板類雪具齊全，Columbia則是雪衣配件為主。</div>
+      </div>
+      <div class="spot">
+        <div class="name">秀岳荘 北大店 <span class="dist">北12条駅步行可達</span></div>
+        <div class="desc">札幌在地老牌戶外滑雪專門店，品項最齊全，內行人推薦，從札幌車站走路約10分或搭一站地鐵，值得專程一趟。</div>
+      </div>
+    </div>
+    <div class="explore-col walk">
+      <h3><span class="dot"></span>踏青散步</h3>
+      <div class="spot">
+        <div class="name">大通公園 <span class="dist">飯店步行可達</span></div>
+        <div class="desc">貫穿市中心的帶狀公園，早晚散步都舒服，東端能遠望電視塔。</div>
+      </div>
+      <div class="spot">
+        <div class="name">北海道神宮 ＋ 圓山公園 <span class="dist">地下鐵圓山公園站</span></div>
+        <div class="desc">神社參道與原始林，10月中下旬正是賞楓期，是市區裡最安靜的一角。</div>
+      </div>
+      <div class="spot">
+        <div class="name">中島公園 <span class="dist">薄野南側</span></div>
+        <div class="desc">湖畔公園，遊客相對少，很適合吃完晚餐後散步消食。</div>
+      </div>
+      <div class="spot">
+        <div class="name">創成川公園 <span class="dist">二条市場旁</span></div>
+        <div class="desc">沿著河道整理過的帶狀綠地，串連二条市場與狸小路，逛累了可以沿河走走。</div>
+      </div>
+      <div class="spot">
+        <div class="name">北海道廳舊本廳舍（赤煉瓦） <span class="dist">札幌車站南口步行9分</span></div>
+        <div class="desc">前庭全日開放免費散步，紅磚洋樓配銀杏很上鏡，館內8:45-21:00開放參觀。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PRACTICAL -->
+<section id="practical">
+  <div class="section-head">
+    <div class="eyebrow">Good to know</div>
+    <h2>實用小提醒</h2>
+  </div>
+  <div class="practical-grid">
+    <div class="practical-card">
+      <span class="k">由縁溫泉旅館</span>
+      <p>地下鐵大通駅1號出口步行約8分。大浴場營業 15:00–翌1:00、翌晨 6:00–10:00，登別カルルス溫泉源泉。</p>
+    </div>
+    <div class="practical-card">
+      <span class="k">10月天氣</span>
+      <p>札幌10月平均高溫約15°C、低溫約7°C，早晚溫差大，建議洋蔥式穿搭＋一件防風外套。</p>
+    </div>
+    <div class="practical-card">
+      <span class="k">交通</span>
+      <p>地下鐵、市電、JR皆可刷Kitaca／Suica等IC卡，飯店周邊景點多在步行範圍，市區移動不太需要包車。</p>
+    </div>
+    <div class="practical-card">
+      <span class="k">Klook 集合提醒</span>
+      <p>京極名水・洞爺湖・登別一日遊出發前一晚，務必再核對集合地點（JR札幌站／大通公園）與時間，避免早上匆忙。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="stamp-final">縁</div>
+  慢慢走，慢慢看 — 祝這趟札幌之旅 chill 又順利
+</footer>
+
+<script>
+  const links = document.querySelectorAll('.daynav a');
+  const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href')));
+  function setActive(){
+    let idx = 0;
+    const y = window.scrollY + 140;
+    sections.forEach((s,i)=>{ if(s && s.offsetTop <= y) idx = i; });
+    links.forEach((a,i)=> a.classList.toggle('active', i===idx));
+  }
+  window.addEventListener('scroll', setActive, {passive:true});
+  setActive();
+</script>
 
 </body>
 </html>
