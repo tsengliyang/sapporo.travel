@@ -217,7 +217,9 @@
   .meal-options{
     display:grid; grid-template-columns:repeat(3,1fr); gap:10px;
   }
-  @media (max-width:640px){ .meal-options{grid-template-columns:1fr;} }
+  /* 4 張卡片時改為 2×2 整齊排列，避免最後一張落單 */
+  .meal-options.four{grid-template-columns:repeat(2,1fr);}
+  @media (max-width:640px){ .meal-options, .meal-options.four{grid-template-columns:1fr;} }
   .meal-card{
     background:var(--paper-card);
     border:1px solid var(--line);
@@ -488,11 +490,12 @@
       </ul>
       <div class="meal-recs">
         <div class="meal-group lunch">
-          <span class="meal-label">午餐（圓山周邊）3選1</span>
-          <div class="meal-options">
+          <span class="meal-label">午餐（圓山周邊）4選1</span>
+          <div class="meal-options four">
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E6%A3%AE%E5%BD%A5+%E6%9C%AC%E5%BA%97+%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">森彥咖啡本店</a></span><span class="mdesc">木造老宅咖啡館，輕食＋自家烘焙咖啡，神宮參拜後散步可達</span></div>
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E6%95%99%E6%8E%88+%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">円山教授</a></span><span class="mdesc">在地人氣海鮮湯咖哩，配料豐富份量足</span></div>
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E3%83%91%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD" target="_blank" rel="noopener">円山Pancake</a></span><span class="mdesc">舒芙蕾厚鬆餅，適合當作悠閒的brunch</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E5%9B%9E%E8%BB%A2%E5%AF%BF%E3%81%97%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%20%E5%86%86%E5%B1%B1%E5%BA%97%20%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">回転寿しトリトン 円山店</a></span><span class="mdesc">北海道人氣迴轉壽司，大塊厚切海鮮與炙燒系列很有名；圓山公園站步行約10分，11:00開門，建議早點到避開排隊</span></div>
           </div>
         </div>
         <div class="meal-group dinner">
@@ -541,11 +544,12 @@
           </div>
         </div>
         <div class="meal-group dinner">
-          <span class="meal-label">晚餐（壓軸）3選1</span>
-          <div class="meal-options">
+          <span class="meal-label">晚餐（壓軸）4選1</span>
+          <div class="meal-options four">
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD%E3%83%93%E3%83%BC%E3%83%AB%E5%9C%92%E3%80%80%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">サッポロビール園</a></span><span class="mdesc">成吉思汗吃到飽＋精釀啤酒，適合最後一晚慶祝</span></div>
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/place/%E9%B0%BB%E3%81%AE%E6%88%90%E7%80%AC+%E6%9C%AD%E5%B9%8C%E4%B8%AD%E5%A4%AE%E5%BA%97/@43.0577908,141.3102589,14z/data=!4m6!3m5!1s0x5f0b2b006377051b:0x1e05f17aaf3170df!8m2!3d43.0494973!4d141.3550962!16s%2Fg%2F11y77wzxsc" target="_blank" rel="noopener">鰻の成瀬 札幌中央店</a></span><span class="mdesc">鰻魚飯專門店，就在中島公園駅旁，晚餐後散步去中島公園剛好順路</span></div>
             <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%97%E3%82%AB%E3%83%AC%E3%83%BC+GARAKU+%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">GARAKU</a></span><span class="mdesc">札幌人氣湯咖哩名店之一，濃郁香料湯底</span></div>
+            <div class="meal-card"><span class="mname"><a href="https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%81%94%E3%82%84%E3%81%8B%E4%BA%AD%20%E7%A6%8F%E4%BD%8F%E5%BA%97%20%E6%9C%AD%E5%B9%8C" target="_blank" rel="noopener">超美食回転寿司 なごやか亭 福住店</a></span><span class="mdesc">招牌「こぼれいくら」現場敲太鼓開賣；搭地下鐵東豊線到福住站再步行約10分，離市區較遠，但這天彈性最大，11:00-22:00無休</span></div>
           </div>
         </div>
       </div>
